@@ -19,3 +19,5 @@ autocmd VIMENTER * NERDTree
 autocmd VIMENTER * wincmd p ""move cursor to main window
 
 imap <TAB> <Plug>snipMateTrigger
+map <c-s> <ESC>:w<cr>i
+inoremap <c-s> <ESC>:w<cr>i
