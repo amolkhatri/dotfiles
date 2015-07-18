@@ -37,3 +37,12 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/poweline"]
+	path = bundle/poweline
+	url = git@github.com:powerline/powerline.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
