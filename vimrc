@@ -20,7 +20,12 @@ let mapleader = ","
 "misc
  
 set noswapfile
-set number
+ "toggle between relative numbers
+nnoremap <silent><leader>n :set relativenumber!<cr>
+
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+
 set hidden "keeps the buffer hidden untill you come back to that buffer
 " imap <TAB> <Plug>snipMateTrigger
 map <c-s> <ESC>:w<cr>   " save file in normal mode
