@@ -1,5 +1,5 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-let g:pathogen_disabled = ["lightline", "powerline"]
+" let g:pathogen_disabled = ["lightline", "powerline"]
 execute pathogen#infect()
 execute pathogen#helptags()
 
@@ -20,6 +20,8 @@ let mapleader = ","
 "misc
  
 set noswapfile
+set wildmenu
+set wildmode=list:longest
  "toggle between relative numbers
 nnoremap <silent><leader>n :set relativenumber!<cr>
 

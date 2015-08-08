@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ln -s ~/.vim/vimrc ~/.vimrc
-
+ln -s ~/.vim/.bash_apparix ~/.bash_apparix
 echo "intializing modules"
 git submodule init
 git submodule update
@@ -13,6 +13,16 @@ if [[ $COUNT = "0" ]]; then
     echo "adding source to .bash_profile"
     echo "source ~/.vim/.profile" >> ~/.bash_profile
 fi
+
+
+
+COUNT=$(grep -c "^source ~/.vim/.bash_apparix" ~/.bash_profile)
+if [[ $COUNT = "0" ]]; then
+    #statements
+    echo "adding source to .bash_apparix"
+    echo "source ~/.vim/.bash_apparix" >> ~/.bash_profile
+fi
+
 
 source ~/.bash_profile
 
