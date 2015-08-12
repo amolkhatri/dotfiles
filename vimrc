@@ -32,6 +32,7 @@ set hidden "keeps the buffer hidden untill you come back to that buffer
 " imap <TAB> <Plug>snipMateTrigger
 map <c-s> <ESC>:w<cr>   " save file in normal mode
 imap <c-s> <ESC>:w<cr>i
+map <c-q> <ESC>:q!<cr>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -40,7 +41,8 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 autocmd VIMENTER * NERDTree
 autocmd VIMENTER * wincmd p ""move cursor to main window
-
+nnoremap <silent><leader>e :NERDTreeFind<cr>
+map <F2> :NERDTreeToggle<cr>
 
 " search
 
@@ -48,12 +50,14 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
-
+set ai "auto indent
+set si "smart indent
 
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR> " Search for all the occurances of current word in current folder
 map <F5> :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') <Bar> copen<CR> " Search all the occurances of the current word in current file
 
 cmap w!! w !sudo tee > /dev/null %
+
 
 
 "command-T
@@ -66,3 +70,6 @@ map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+
+
