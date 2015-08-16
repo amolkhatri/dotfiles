@@ -9,6 +9,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set softtabstop=4 " To delete tab using backspace
 
 set background=light
 colorscheme PaperColor
