@@ -11,8 +11,11 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4 " To delete tab using backspace
 
-set background=light
-colorscheme PaperColor
+" set background=light
+" colorscheme PaperColor
+
+set background=dark
+colorscheme solarized
 
 let mapleader = ","
 
