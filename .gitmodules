@@ -58,3 +58,9 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "bundle/material-theme"]
+	path = bundle/material-theme
+	url = git@github.com:jscappini/material.vim.git
