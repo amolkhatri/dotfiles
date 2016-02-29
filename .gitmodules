@@ -70,3 +70,27 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = git@github.com:fatih/vim-go.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = git@github.com:fatih/molokai.git
+[submodule "bundle/wellsokai"]
+	path = bundle/wellsokai
+	url = https://github.com/wellsjo/wellsokai.vim.git
+[submodule "bundle/onedark"]
+	path = bundle/onedark
+	url = https://github.com/joshdick/onedark.vim.git
+[submodule "bundle/colorsbox"]
+	path = bundle/colorsbox
+	url = https://github.com/mkarmona/colorsbox.git
+[submodule "bundle/materialbox"]
+	path = bundle/materialbox
+	url = https://github.com/mkarmona/materialbox.git
+[submodule "bundle/vim-railscasts-theme"]
+	path = bundle/vim-railscasts-theme
+	url = https://github.com/jpo/vim-railscasts-theme.git
+[submodule "bundle/vim-monokoi"]
+	path = bundle/vim-monokoi
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git@github.com:klen/python-mode.git

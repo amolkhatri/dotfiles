@@ -1,4 +1,5 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim 
 " let g:pathogen_disabled = ["lightline", "powerline"]
 execute pathogen#infect()
 execute pathogen#helptags()
@@ -11,7 +12,8 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4 " To delete tab using backspace
 
-set background=light
+set guifont=inconsolata:h13
+set background=dark
 colorscheme PaperColor
 
 " set background=dark
@@ -86,4 +88,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-
+let g:pymode_folding = 1
