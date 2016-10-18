@@ -1,5 +1,4 @@
 #!/bin/sh
-
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/.bash_apparix ~/.bash_apparix
 echo "intializing modules"
@@ -23,7 +22,10 @@ if [[ $COUNT = "0" ]]; then
     echo "source ~/.vim/.bash_apparix" >> ~/.bash_profile
 fi
 
-
+if [ -d "/Applications/MacVim.app" ]; then
+    echo "adding shortcut for MacVim"
+    echo "alias mvim='/Applications/MacVim.app/Contents/MacOS/MacVim'" >> ~/.bash_profile
+fi
 source ~/.bash_profile
 
 echo "You need to go and explicity build command-t. Follow installation instructions"
